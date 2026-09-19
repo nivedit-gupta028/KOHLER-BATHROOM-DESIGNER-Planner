@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KOHLER AI Bathroom Designer - Presentation Deck</title>
+<style>
+@page { size: 16in 9in; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #11100e; color: #f6f1e8; font-family: "Segoe UI", Arial, sans-serif; }
+.slide { width: 16in; height: 9in; padding: 0.72in 0.9in; page-break-after: always; position: relative; overflow: hidden; background: radial-gradient(circle at 85% 10%, #302615 0, #16130f 28%, #11100e 70%); }
+.slide:last-child { page-break-after: auto; }
+.kicker { color: #c5a059; font-size: 16px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+h1 { font: 600 54px Georgia, serif; line-height: 1.05; margin: 34px 0 20px; max-width: 900px; }
+h2 { font: 600 40px Georgia, serif; line-height: 1.1; margin: 22px 0 28px; }
+h3 { color: #c5a059; font-size: 18px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 13px; }
+p, li { color: #c6c0b6; font-size: 20px; line-height: 1.45; }
+ul { padding-left: 25px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; }
+.eyebrow { color: #c5a059; font-size: 15px; text-transform: uppercase; letter-spacing: .16em; }
+.quote { border-left: 3px solid #c5a059; padding-left: 22px; color: #f6f1e8; font: 28px Georgia, serif; line-height: 1.3; margin: 25px 0; }
+.flow { margin-top: 35px; padding: 26px; border: 1px solid #55462f; background: rgba(20,18,14,.72); color: #e9d4a1; font: 22px Consolas, monospace; line-height: 1.65; white-space: pre; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
+.card { border: 1px solid #3a3329; background: rgba(28,25,20,.8); padding: 19px; min-height: 112px; }
+.card strong { display: block; color: #f6f1e8; font-size: 22px; margin-bottom: 8px; }
+.card span { color: #aaa398; font-size: 17px; line-height: 1.35; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 18px; }
+th { color: #c5a059; text-align: left; letter-spacing: .1em; text-transform: uppercase; font-size: 14px; padding: 13px; border-bottom: 1px solid #665437; }
+td { color: #d2ccc1; padding: 14px 13px; border-bottom: 1px solid #332e27; }
+.big { color: #c5a059; font: 600 34px Georgia, serif; line-height: 1.2; }
+.footer { position: absolute; bottom: .45in; left: .9in; right: .9in; display: flex; justify-content: space-between; color: #766e63; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
+.number { position: absolute; top: .62in; right: .9in; color: #c5a059; font: 22px Georgia, serif; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="number">01 / 04</div><div class="kicker">KOHLER AI Bathroom Designer</div>
+  <h1>From brief to bathroom.</h1>
+  <div class="grid"><div><div class="quote">A considered room, resolved through intelligence.</div><p>Turn a few human decisions into a feasible, visual bathroom plan.</p><div class="cards"><div class="card"><strong>Define</strong><span>Room dimensions, budget, design language, layout.</span></div><div class="card"><strong>Resolve</strong><span>Catalog intelligence plus spatial constraints.</span></div><div class="card"><strong>Explore</strong><span>Interactive 3D room and fixture inspection.</span></div><div class="card"><strong>Decide</strong><span>Cost, space, water demand, and BOM.</span></div></div></div><div><h3>Core approach</h3><ul><li>Start with a real planning workflow.</li><li>Use product data as the source of truth.</li><li>Make the tradeoffs visible and explainable.</li><li>Move from generated plan to spatial experience.</li></ul><p class="big">1. Brief<br>2. Optimize<br>3. Visualize<br>4. Inspect</p></div></div>
+  <div class="footer"><span>Precision in every proportion</span><span>KOHLER</span></div>
+</section>
+<section class="slide">
+  <div class="number">02 / 04</div><div class="kicker">System architecture</div><h2>Architecture that keeps decisions explainable.</h2>
+  <div class="flow">User brief
+   |
+   v
+FastAPI validation
+   |
+   v
+Catalog scoring + PuLP constraints
+   |
+   v
+Wall-aware fixture placement
+   |
+   +--> JSON --> Metrics + BOM
+   |
+   +--> Room + fixtures --> Three.js digital twin</div>
+  <div class="cards"><div class="card"><strong>FastAPI boundary</strong><span>Typed requests, API routes, errors, static assets.</span></div><div class="card"><strong>Optimizer</strong><span>Theme scoring, budget, categories, clearance, placement.</span></div><div class="card"><strong>Catalog truth</strong><span>100 products with dimensions, price, water, and material data.</span></div><div class="card"><strong>Resilient runtime</strong><span>PuLP/CBC first; deterministic greedy fallback when needed.</span></div></div>
+  <div class="footer"><span>Constraint-aware generation</span><span>02</span></div>
+</section>
+<section class="slide">
+  <div class="number">03 / 04</div><div class="kicker">Technology + interaction</div><h2>Practical stack. Rich interaction.</h2>
+  <table><thead><tr><th>Layer</th><th>Technology</th><th>Role</th></tr></thead><tbody><tr><td>API</td><td>FastAPI + Pydantic</td><td>Typed request boundary and JSON service</td></tr><tr><td>Optimization</td><td>PuLP + Pandas</td><td>Catalog scoring and constrained selection</td></tr><tr><td>Frontend</td><td>HTML + CSS + JavaScript</td><td>Responsive planning workflow</td></tr><tr><td>3D</td><td>Three.js + OBJLoader</td><td>Digital twin, assets, camera, selection</td></tr><tr><td>Delivery</td><td>Docker + Uvicorn</td><td>Reproducible local and container runtime</td></tr></tbody></table>
+  <div class="grid" style="margin-top:35px"><div><h3>Interaction principles</h3><ul><li>Working tool first, no marketing detour.</li><li>Fixture HUD for focused inspection.</li><li>Material swatches affect the active fixture.</li></ul></div><div><h3>Water behavior</h3><ul><li>Confined sink and bathtub surfaces.</li><li>Ripples, caustics, steam, vortex, splash.</li><li>No bubbles or foam.</li></ul></div></div>
+  <div class="footer"><span>FastAPI / PuLP / Three.js / Docker</span><span>03</span></div>
+</section>
+<section class="slide">
+  <div class="number">04 / 04</div><div class="kicker">Innovation pitch</div><h2>Constraint-aware generative merchandising.</h2>
+  <div class="grid"><div><p class="big">The opportunity</p><p>Bathroom planning is fragmented across spreadsheets, product pages, floor-plan sketches, and disconnected visualizers.</p><p class="big">The innovation</p><p>The system does not merely recommend attractive products. It resolves a collection that is budget-aware, space-aware, category-aware, placement-aware, theme-aware, and water-aware.</p></div><div><h3>Why it matters</h3><p>Computational planning and human judgment meet in one loop. Users understand why a collection works, then experience it spatially through the digital twin.</p><div class="quote">Design intent in. A buildable bathroom direction out.</div><h3>Expansion path</h3><ul><li>Saved and comparable layouts</li><li>Client-ready PDF/image export</li><li>Accessibility and code checks</li><li>Richer finish intelligence</li></ul></div></div>
+  <div class="footer"><span>KOHLER AI Bathroom Designer</span><span>04</span></div>
+</section>
+</body>
+</html>
