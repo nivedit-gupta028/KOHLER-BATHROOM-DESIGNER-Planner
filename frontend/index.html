@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="KOHLER AI Bathroom Designer — optimize a considered room through intelligence, proportion, and material." />
+    <title>KOHLER | AI Bathroom Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { ink: '#050505', brass: '#C5A059', panel: '#101010', line: '#24211d', ivory: '#FFFFFF', muted: '#8f8b82' },
+            fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/environments/RoomEnvironment.js"></script>
+    <script type="importmap">
+      {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"}}
+    </script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="bg-ink text-ivory font-sans">
+    <div class="min-h-screen bg-ink">
+      <header class="shell-header flex items-center justify-between px-6 py-5 lg:px-10">
+        <div class="flex items-center gap-4">
+          <div class="monogram">K</div>
+          <div>
+            <div class="eyebrow">KOHLER <span class="text-[#6d5b38]">|</span> BATHROOM DESIGNER</div>
+            <h1 class="font-display text-2xl tracking-tight lg:text-3xl">Bathroom Designer <span class="text-brass">&amp;</span> Planner</h1>
+          </div>
+        </div>
+        <div class="hidden items-center gap-3 text-right md:flex">
+          <div class="status-dot"></div>
+          <div><div class="eyebrow">ENGINE ONLINE</div><div class="text-xs text-muted">PuLP / Digital Twin v1.0</div></div>
+        </div>
+      </header>
+
+      <main class="app-shell grid lg:grid-cols-[280px_minmax(0,1fr)]">
+        <aside class="sidebar border-r border-line px-6 py-7 lg:min-h-[calc(100vh-91px)] lg:px-7">
+          <div class="mb-8">
+            <div class="eyebrow mb-2">01 / PROJECT BRIEF</div>
+            <p class="text-sm leading-6 text-muted">Set the room parameters. The optimizer resolves the collection against space, budget, and aesthetic intent.</p>
+          </div>
+          <form id="optimize-form" class="space-y-5">
+            <div class="grid grid-cols-2 gap-3">
+              <label class="field"><span>Length <em>FT</em></span><input id="length" type="number" min="4" max="40" step="0.5" value="10" required /></label>
+              <label class="field"><span>Width <em>FT</em></span><input id="width" type="number" min="4" max="40" step="0.5" value="8" required /></label>
+            </div>
+            <label class="field"><span>Budget <em>USD</em></span><input id="budget" type="number" min="0" step="250" value="8000" required /></label>
+            <label class="field"><span>Design language</span>
+              <select id="theme">
+                <option>Minimalist Modern</option>
+                <option>Japanese Zen</option>
+                <option>Classic Luxury</option>
+                <option>Mediterranean Coastal</option>
+                <option>Biophilic Sanctuary</option>
+              </select>
+            </label>
+            <label class="field"><span>Layout style</span>
+              <select id="layout_style">
+                <option>Zoned Wet/Dry</option>
+                <option>Linear Single-Wall</option>
+                <option>Parallel Galley</option>
+              </select>
+            </label>
+            <div class="area-note"><span>Planning area</span><strong id="area-readout">80.0 sq ft</strong></div>
+            <button id="solve-button" class="primary-button w-full" type="submit"><span>◆</span> Solve &amp; Generate Layout</button>
+          </form>
+          <div class="sidebar-foot mt-10 border-t border-line pt-5">
+            <div class="eyebrow mb-2">SOLVER NOTES</div>
+            <p class="text-xs leading-5 text-muted">One fixture per category · 70% maximum allocated space · wall-first non-overlapping placement.</p>
+          </div>
+        </aside>
+
+        <section class="workspace min-w-0 px-5 py-6 lg:px-8 lg:py-8">
+          <div class="mb-5 flex flex-col justify-between gap-4 xl:flex-row xl:items-end">
+            <div>
+              <div class="eyebrow mb-2">02 / RESOLVED LAYOUT</div>
+              <h2 class="font-display text-3xl lg:text-4xl">A considered room, resolved through intelligence.</h2>
+              <p class="mt-2 max-w-2xl text-sm text-muted">Explore the room in 3D. Select any fixture to surface live simulated telemetry from its digital twin.</p>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-muted"><span class="legend-swatch"></span> Selected collection <span class="text-brass">/</span> <span id="fixture-count">0 fixtures</span></div>
+          </div>
+
+          <div id="must-have-warning" class="hidden mb-4 rounded border border-[#67542f] bg-[#1a1712] px-4 py-3 text-xs text-[#e3c98f]"></div>
+
+          <div id="metrics" class="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            <div class="metric-card"><div class="eyebrow">TOTAL COST</div><div id="metric-cost" class="metric-value">$0</div><div class="metric-sub">within selected brief</div></div>
+            <div class="metric-card"><div class="eyebrow">SPACE ALLOCATED</div><div id="metric-space" class="metric-value">0.0 <small>SQ FT</small></div><div class="metric-sub"><span id="space-limit">0.0 sq ft</span> maximum</div><div class="progress-track"><div id="space-progress" class="progress-fill"></div></div></div>
+            <div class="metric-card"><div class="eyebrow">WATER DEMAND</div><div id="metric-water" class="metric-value">0.0 <small>GPM</small></div><div class="metric-sub">collection peak flow</div></div>
+          </div>
+
+          <div class="viewport-card relative overflow-hidden">
+            <div class="viewport-topline flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span><i class="live-pip"></i> DIGITAL TWIN / LIVE VIEW</span>
+                <button id="btn-toggle-prelim" class="prelim-toggle-pill" type="button">
+                  <span class="text-brass">📋</span> Preliminary Specs
+                </button>
+              </div>
+              <span class="hidden sm:inline">DRAG TO ORBIT <span class="text-brass">·</span> SCROLL TO ZOOM <span class="text-brass">·</span> CLICK TO INSPECT</span>
+            </div>
+            <div id="viewport" aria-label="Interactive 3D bathroom layout"></div>
+            <div id="viewport-empty" class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="text-center"><div class="mb-2 font-display text-xl text-brass">Awaiting a resolved room</div><div class="text-xs uppercase tracking-[0.18em] text-muted">Set the brief and run the solver</div></div></div>
+            
+            <!-- Preliminary Info Display Panel -->
+            <div id="prelim-panel" class="prelim-panel hidden">
+              <div class="flex items-start justify-between gap-3 border-b border-[#2b251b] pb-2.5">
+                <div>
+                  <div class="eyebrow flex items-center gap-1.5"><span class="status-dot"></span> PRELIMINARY SPECIFICATIONS</div>
+                  <h3 class="font-display text-base text-ivory mt-0.5">Room &amp; Engineering Demands</h3>
+                </div>
+                <button id="prelim-close" class="hud-close" aria-label="Close preliminary panel">×</button>
+              </div>
+
+              <div class="prelim-grid mt-3">
+                <div class="prelim-metric">
+                  <span class="prelim-label">Spatial Layout</span>
+                  <strong id="prelim-dims" class="prelim-val">10.0 × 8.0 FT</strong>
+                  <div id="prelim-area" class="prelim-sub">80.0 sq ft gross</div>
+                </div>
+                <div class="prelim-metric">
+                  <span class="prelim-label">Circulation Ratio</span>
+                  <strong id="prelim-circulation" class="prelim-val">70% Open</strong>
+                  <div id="prelim-clearance" class="prelim-sub">NKBA Standard Met</div>
+                </div>
+                <div class="prelim-metric">
+                  <span class="prelim-label">Financial Variance</span>
+                  <strong id="prelim-budget-var" class="prelim-val text-brass">$0</strong>
+                  <div id="prelim-budget-status" class="prelim-sub">Within Budget</div>
+                </div>
+                <div class="prelim-metric">
+                  <span class="prelim-label">Peak Water Flow</span>
+                  <strong id="prelim-water-rate" class="prelim-val text-[#88ccff]">0.0 GPM</strong>
+                  <div class="prelim-sub">WaterSense Compliant</div>
+                </div>
+              </div>
+
+              <div class="mt-3 pt-2.5 border-t border-[#24211d]">
+                <div class="flex justify-between items-center mb-1.5">
+                  <div class="text-[10px] uppercase tracking-wider text-muted font-semibold">Fixture Allocation</div>
+                  <div id="prelim-fixture-count" class="text-[10px] text-brass">0 fixtures</div>
+                </div>
+                <div id="prelim-fixtures-list" class="space-y-1 max-h-32 overflow-y-auto pr-1 text-xs">
+                  <div class="text-[11px] text-muted italic">Solve room to populate fixtures.</div>
+                </div>
+              </div>
+
+              <div class="mt-3 pt-2.5 border-t border-[#24211d] flex flex-wrap gap-2">
+                <button id="btn-prelim-toggle-water" type="button" class="prelim-action-btn flex-1">
+                  <span>💧</span> Run Water Simulation
+                </button>
+                <button id="btn-prelim-reset-cam" type="button" class="prelim-action-btn flex-1">
+                  <span>🎯</span> Center Camera
+                </button>
+              </div>
+            </div>
+
+            <div id="hud" class="telemetry-hud hidden">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="eyebrow">SHOPPABLE ITEM</div>
+                  <h3 id="hud-title" class="mt-1 font-display text-lg">Fixture</h3>
+                  <div id="hud-price" class="text-brass font-medium mt-1">$0</div>
+                </div>
+                <button id="hud-close" class="hud-close" aria-label="Close panel">×</button>
+              </div>
+              <div class="hud-rule"></div>
+              <div id="hud-controls" class="mt-3 text-sm flex flex-col gap-3"></div>
+              <div id="hud-material" class="mt-3 text-[11px] leading-5 text-muted">Material finish</div>
+            </div>
+            <div class="scene-badge"><span id="scene-theme">MINIMALIST MODERN</span><span class="text-brass">·</span><span id="scene-room">10 × 8 FT</span></div>
+          </div>
+
+          <div class="mt-8">
+            <div class="mb-4 flex items-end justify-between"><div><div class="eyebrow mb-2">03 / BILL OF MATERIALS</div><h2 class="font-display text-2xl">Selected fixtures</h2></div><div id="bom-summary" class="text-right text-xs text-muted">No collection resolved</div></div>
+            <div class="table-card overflow-x-auto"><table class="w-full min-w-[720px] text-left"><thead><tr><th>Fixture</th><th>Category</th><th>Dimensions</th><th>Material finish</th><th class="text-right">Price</th></tr></thead><tbody id="bom-body"><tr><td colspan="5" class="empty-row">Run the solver to generate a bill of materials.</td></tr></tbody></table></div>
+          </div>
+          <footer class="mt-8 flex flex-col justify-between gap-2 border-t border-line pt-4 text-[11px] uppercase tracking-[0.16em] text-muted sm:flex-row"><span>KOHLER</span><span>Precision in every proportion</span></footer>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

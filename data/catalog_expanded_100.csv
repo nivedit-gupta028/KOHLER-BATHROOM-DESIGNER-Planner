@@ -1,0 +1,101 @@
+product_id,category,model_name,base_price_usd,material_name,aesthetic_tag,length_in,width_in,height_in,clearance_required_sqft,aesthetic_score,water_usage_gpm,power_watts,iot_enabled,eco_score,asset_file
+T-001,Toilet,Numi 2.0 Smart Toilet,7150,Ceramic & Glass,Minimalist Modern,26.0,15.0,20.0,12.0,10,1.0,60,1,8,30439IN.obj
+T-002,Toilet,Veil Wall-Hung Toilet,4500,Ceramic,Minimalist Modern,25.0,17.0,18.0,10.0,9,0.8,45,1,9,30439IN.obj
+T-003,Toilet,Innate Smart Toilet,2800,Ceramic,Japanese Zen,28.0,16.0,21.0,9.0,7,1.28,35,1,7,30439IN.obj
+S-001,Shower,Anthem Digital 4-Port Shower Valve & Controls,3800,Brass & Tempered Glass,Minimalist Modern,48.0,48.0,80.0,15.0,10,2.2,30,1,4,33075T-4.obj
+S-002,Shower,Statement Luxury Shower Enclosure,1800,Tempered glass,Classic Luxury,48.0,36.0,80.0,12.0,8,1.75,0,0,8,33075T-4.obj
+V-001,Vanity,Tailored Double Vanity,2600,Marble & Walnut,Classic Luxury,60.0,22.0,34.0,15.0,10,0.0,0,0,8,
+V-002,Vanity,Jute Wall-Hung Vanity,1200,Matte oak,Japanese Zen,36.0,21.0,34.0,10.0,8,0.0,0,0,9,
+M-001,Mirror,Verdera Voice Smart Lighted Mirror,950,Glass & Aluminum,Minimalist Modern,34.0,4.0,30.0,2.0,9,0.0,40,1,8,
+B-001,Bathtub,Veil Freestanding Cast Resin Tub,4400,Cast Resin,Japanese Zen,70.0,36.0,24.0,25.0,10,0.0,0,0,6,
+X-001,Sensor,H2Wise+ Smart Water Leak Monitor,650,Brass & Plastic,Minimalist Modern,6.0,4.0,4.0,0.5,7,0.0,10,1,10,
+T-004,Toilet,San Souci Touchless Comfort Height Toilet,1450,Ceramic,Minimalist Modern,27.5,16.5,25.5,9.5,8,1.28,15,1,8,30439IN.obj
+T-005,Toilet,Cimarron Two-Piece Elongated Toilet,480,Vitreous China,Transitional,29.5,17.5,30.5,8.5,7,1.28,0,0,7,30439IN.obj
+T-006,Toilet,Memoirs Stately Comfort Height Toilet,720,Vitreous China,Classic Luxury,30.0,18.0,31.5,9.0,8,1.28,0,0,7,30439IN.obj
+T-007,Toilet,Reach Compact One-Piece Toilet,620,Ceramic,Minimalist Modern,24.0,14.5,27.5,7.5,7,1.28,0,0,8,30439IN.obj
+T-008,Toilet,Eir Intelligent Integrated Toilet,5200,Ceramic & Stainless,Japanese Zen,27.0,15.5,21.0,11.0,9,1.0,50,1,9,30439IN.obj
+T-009,Toilet,Avoir Tankless Elongated Toilet,3100,Ceramic,Minimalist Modern,26.5,15.0,19.5,9.0,8,0.9,25,0,9,30439IN.obj
+T-010,Toilet,Persuade Curv Dual-Flush Toilet,590,Vitreous China,Minimalist Modern,28.5,14.5,28.5,8.0,8,1.0,0,0,9,30439IN.obj
+T-011,Toilet,Kathryn 1-Piece Elongated Heritage Toilet,1650,Fireclay,Classic Luxury,30.5,17.0,29.0,9.5,9,1.28,0,0,6,30439IN.obj
+T-012,Toilet,Veil Intelligent Dual-Flush Wall Toilet,5800,Ceramic & Glass,Minimalist Modern,26.0,16.0,19.0,10.5,10,0.85,55,1,9,30439IN.obj
+T-013,Toilet,Bravura Low-Profile RV/Compact Toilet,390,Composite Resin,Minimalist Modern,23.5,14.0,20.0,6.5,6,1.28,0,0,8,30439IN.obj
+T-014,Toilet,Karing 3.0 Smart Bidet Toilet,4100,Ceramic & Polymer,Japanese Zen,27.5,16.0,22.0,10.0,9,1.0,48,1,8,30439IN.obj
+T-015,Toilet,Corbelle ContinuousClean XT Toilet,880,Vitreous China,Transitional,29.0,16.5,31.0,8.5,8,1.28,5,0,8,30439IN.obj
+T-016,Toilet,Purist Hatbox Ultra-Low Profile Toilet,3400,Vitreous China,Minimalist Modern,25.0,16.0,17.0,9.0,9,1.1,30,1,7,30439IN.obj
+T-017,Toilet,Devonshire Comfort Height Classic Toilet,540,Vitreous China,Classic Luxury,29.5,17.0,30.5,8.5,7,1.28,0,0,7,30439IN.obj
+T-018,Toilet,Sunstone Matte Black Intelligent Toilet,4900,Matte Ceramic,Industrial Chic,26.5,15.5,20.5,11.0,9,0.95,52,1,9,30439IN.obj
+S-003,Shower,HydroRail-R Beam Luxury Shower Column,1250,Brushed Nickel & Brass,Minimalist Modern,42.0,36.0,78.0,12.0,8,2.0,0,0,7,33075T-4.obj
+S-004,Shower,DTV+ Digital Thermostatic Shower System,4600,Tempered Glass & Brass,Minimalist Modern,60.0,48.0,84.0,20.0,10,2.5,45,1,5,33075T-4.obj
+S-005,Shower,Artifacts Victorian Rainhead Shower System,2100,Polished Chrome & Brass,Classic Luxury,48.0,48.0,82.0,14.0,9,2.2,0,0,6,33075T-4.obj
+S-006,Shower,Purist Floor-to-Ceiling Walk-In Glass Enclosure,2400,Tempered Glass & Matte Black,Industrial Chic,60.0,36.0,84.0,18.0,9,1.75,0,0,8,33075T-4.obj
+S-007,Shower,Moxie Bluetooth Speaker Showerhead Set,380,Polished Chrome,Minimalist Modern,36.0,36.0,75.0,9.0,7,1.75,10,1,8,33075T-4.obj
+S-008,Shower,Loure Multi-Function Waterfall Shower Panel,2900,Brushed Stainless Steel,Japanese Zen,54.0,42.0,80.0,16.0,9,2.0,20,1,6,33075T-4.obj
+S-009,Shower,Finial Traditional Luxury Shower Column,1750,Oil-Rubbed Bronze,Classic Luxury,48.0,40.0,78.0,12.0,8,2.2,0,0,6,33075T-4.obj
+S-010,Shower,Awaken Mist & Rain Eco-Shower Enclosure,980,Anodized Aluminum & Glass,Minimalist Modern,40.0,40.0,76.0,10.0,8,1.5,0,0,9,33075T-4.obj
+S-011,Shower,Sensate Smart Aromatherapy Steam Shower Unit,6200,Smoked Glass & Titanium,Minimalist Modern,60.0,60.0,88.0,25.0,10,2.0,85,1,6,33075T-4.obj
+S-012,Shower,Kallista Per Se Minimalist Concealed Shower,3950,Brushed Bronze,Minimalist Modern,48.0,48.0,80.0,15.0,9,1.8,15,1,8,33075T-4.obj
+S-013,Shower,Aura Serenity Ceiling Rain Pavilion,5100,Brushed Stainless & Brass,Japanese Zen,72.0,48.0,90.0,24.0,10,2.2,40,1,6,33075T-4.obj
+S-014,Shower,Levity Frameless Sliding Shower Door System,1100,Crystal Clear Glass,Transitional,60.0,32.0,76.0,12.0,8,1.75,0,0,8,33075T-4.obj
+S-015,Shower,Stillness Square Hydrotherapy Wall Enclosure,2700,Matte Black Steel & Glass,Industrial Chic,48.0,48.0,82.0,15.0,9,2.0,25,1,7,33075T-4.obj
+S-016,Shower,Stance Geometric Overhead Shower Column,1450,Polished Chrome,Minimalist Modern,42.0,42.0,78.0,12.0,8,1.75,0,0,8,33075T-4.obj
+S-017,Shower,Invigoration Digital Series Steam Generator & Kit,3300,Stainless Steel,Minimalist Modern,50.0,40.0,80.0,15.0,8,1.6,65,1,7,33075T-4.obj
+S-018,Shower,Archer Pivot Glass Door Modern Shower Kit,850,Frosted Glass & Chrome,Transitional,36.0,36.0,74.0,9.0,7,1.75,0,0,8,33075T-4.obj
+V-003,Vanity,Damask Traditional Single Vanity,1650,Cherry Wood & Quartz,Classic Luxury,36.0,22.0,34.5,10.0,8,0.0,0,0,7,
+V-004,Vanity,Jacquard Mid-Century Double Vanity,3100,Walnut & White Quartz,Minimalist Modern,60.0,22.0,34.0,16.0,9,0.0,0,0,8,
+V-005,Vanity,Poplin Shaker Style Double Vanity,2200,Solid Ash & Granite,Transitional,60.0,21.5,34.0,15.0,8,0.0,0,0,8,
+V-006,Vanity,Harken Floating Wall-Mount Compact Vanity,850,Oak Veneer,Japanese Zen,24.0,18.0,22.0,7.0,7,0.0,0,0,9,
+V-007,Vanity,Marabou Curated Triple-Drawer Vanity,2750,Bleached Oak & Marble,Japanese Zen,48.0,22.0,34.0,12.0,9,0.0,0,0,8,
+V-008,Vanity,Southerk Industrial Iron Frame Vanity,1850,Cast Iron & Reclaimed Pine,Industrial Chic,42.0,22.0,33.0,11.0,8,0.0,0,0,7,
+V-009,Vanity,Verona Italian Carrara Double Vanity,4200,Carrara Marble & Fluted Teak,Classic Luxury,72.0,23.0,35.0,18.0,10,0.0,0,0,7,
+V-010,Vanity,Stono Stone Vessel Vanity Console,1400,Basalt & Matte Steel,Japanese Zen,32.0,20.0,32.0,8.5,8,0.0,0,0,8,
+V-011,Vanity,Clarity Smart Vanity with Power Outlets,2950,White Oak & Solid Surface,Minimalist Modern,48.0,22.0,34.0,12.0,9,0.0,45,1,8,
+V-012,Vanity,Bexley Single Freestanding Vanity,980,Birch Plywood & Ceramic,Scandinavian,30.0,19.0,33.5,8.0,7,0.0,0,0,8,
+V-013,Vanity,Archetype Architectural Floating Vanity,3600,Charcoal Concrete & Brass,Industrial Chic,54.0,21.0,20.0,14.0,9,0.0,0,0,7,
+V-014,Vanity,Memoirs Stately Console Table Vanity,1350,Fireclay & Brass,Classic Luxury,30.0,22.0,35.0,8.5,8,0.0,0,0,7,
+V-015,Vanity,Silestone Quartz Integrated Dual Vanity,3800,Engineered Quartz & Walnut,Minimalist Modern,66.0,22.5,34.0,17.0,10,0.0,0,0,9,
+V-016,Vanity,Avesta Petite Wall-Hung Vanity,720,Bamboo & Ceramic,Japanese Zen,20.0,16.0,20.0,5.5,7,0.0,0,0,9,
+V-017,Vanity,Kallista Grid Master Suite Vanity,5400,Cast Bronze & Nero Marquina Marble,Classic Luxury,72.0,24.0,35.5,20.0,10,0.0,0,0,6,
+V-018,Vanity,Seville French Provincial Vanity,2450,Carved Antique Oak & Granite,Classic Luxury,48.0,22.0,34.0,12.5,8,0.0,0,0,7,
+B-002,Bathtub,Sunstruck Oval Freestanding Soaking Tub,2300,Acrylic,Minimalist Modern,66.0,34.0,24.5,22.0,8,0.0,0,0,7,
+B-003,Bathtub,Artifacts Cast Iron Clawfoot Tub,4100,Enameled Cast Iron,Classic Luxury,66.0,33.0,28.0,24.0,10,0.0,0,0,6,
+B-004,Bathtub,Caskata Fluted Oval Stone Tub,5200,Cast Resin,Japanese Zen,68.0,35.0,23.0,24.0,10,0.0,0,0,7,
+B-005,Bathtub,Archer Heated Backrest Alcove Tub,1150,Acrylic,Transitional,60.0,32.0,19.0,16.0,7,0.0,40,1,7,
+B-006,Bathtub,Underscore Deep Soaking Cube Tub,1950,Acrylic,Japanese Zen,48.0,48.0,34.0,18.0,9,0.0,0,0,8,
+B-007,Bathtub,Stillness Infinity-Edge Deep Soak Tub,8900,Cast Resin & Hinoki Wood,Japanese Zen,72.0,42.0,26.0,32.0,10,0.0,90,1,6,
+B-008,Bathtub,Iron Works Historic Freestanding Oval Bath,5500,Enameled Cast Iron,Classic Luxury,66.0,36.0,24.5,25.0,9,0.0,0,0,6,
+B-009,Bathtub,Stargaze Air-Bath Hydrotherapy Tub,3400,Cast Acrylic,Minimalist Modern,70.0,36.0,24.0,26.0,9,0.0,65,1,6,
+B-010,Bathtub,Tea-for-Two Contoured Cast Iron Tub,3800,Enameled Cast Iron,Transitional,66.0,36.0,24.0,24.0,8,0.0,0,0,6,
+B-011,Bathtub,Volute Architectural Solid Surface Bath,4700,Mineral Composite,Minimalist Modern,67.0,33.0,22.0,22.0,9,0.0,0,0,8,
+B-012,Bathtub,Mariposa High-Gloss Whirlpool Tub,1650,Acrylic & Fiberglass,Transitional,60.0,36.0,20.0,18.0,7,0.0,50,0,6,
+B-013,Bathtub,Bellwether Low-Step Alcove Bath,850,Enameled Cast Iron,Minimalist Modern,60.0,30.0,15.0,15.0,7,0.0,0,0,8,
+B-014,Bathtub,Kallista Papion Fluid Freestanding Tub,7800,Composite Stone,Minimalist Modern,71.0,38.0,21.5,28.0,10,0.0,0,0,7,
+B-015,Bathtub,Onyx Matte Black Vessel Bathtub,6100,Cast Resin,Industrial Chic,65.0,34.0,23.0,23.0,9,0.0,0,0,7,
+B-016,Bathtub,RiverBath Quad-Hydrotherapy Spa Tub,7500,Cast Acrylic,Classic Luxury,75.0,45.0,25.0,35.0,9,0.0,120,1,5,
+B-017,Bathtub,Evok Drop-In Zen Deep Soak Bath,2100,Acrylic,Japanese Zen,62.0,32.0,22.0,18.0,8,0.0,0,0,8,
+M-002,Mirror,Verdera Bluetooth Voice Medicine Cabinet,1350,Glass & Aluminum,Minimalist Modern,30.0,5.0,30.0,2.5,9,0.0,45,1,8,
+M-003,Mirror,Essential Round Backlit Vanity Mirror,520,Glass & Brushed Brass,Minimalist Modern,32.0,2.0,32.0,1.5,8,0.0,25,0,9,
+M-004,Mirror,Profile LED Anti-Fog Rectangular Mirror,680,Glass & Anodized Aluminum,Minimalist Modern,40.0,2.5,30.0,2.0,8,0.0,30,0,9,
+M-005,Mirror,Avoir Circular Dimmable Halo Mirror,790,Glass & Matte Black Metal,Japanese Zen,36.0,2.0,36.0,2.0,9,0.0,35,1,8,
+M-006,Mirror,Artifacts Ornate Carved Gilt Mirror,850,Glass & Wood Composite,Classic Luxury,32.0,3.0,42.0,2.0,9,0.0,0,0,7,
+M-007,Mirror,Maxstow Recessed Frameless Medicine Mirror,420,Glass & Steel,Transitional,24.0,4.0,36.0,1.5,7,0.0,0,0,8,
+M-008,Mirror,Lumiere Smart Wellness Weather Mirror,1600,Glass & Smart Display Film,Minimalist Modern,48.0,3.0,36.0,3.0,10,0.0,50,1,8,
+M-009,Mirror,Purist Minimalist Flat Pivot Mirror,460,Glass & Polished Chrome,Minimalist Modern,26.0,3.5,34.0,1.5,8,0.0,0,0,8,
+M-010,Mirror,Memoirs Classic Beveled Wall Mirror,390,Glass & Molded Polymer,Classic Luxury,28.0,2.0,38.0,1.5,7,0.0,0,0,8,
+M-011,Mirror,Studio McGee Arched Decorative Mirror,640,Glass & Antiqued Brass,Classic Luxury,26.0,2.0,40.0,1.5,9,0.0,0,0,7,
+M-012,Mirror,Sol Edge-Lit Tunable CCT Smart Mirror,1100,Glass & Brushed Titanium,Japanese Zen,36.0,2.5,36.0,2.0,9,0.0,40,1,8,
+M-013,Mirror,Industrial Pivot Iron Vanity Mirror,490,Glass & Cast Iron,Industrial Chic,24.0,3.0,36.0,1.5,8,0.0,0,0,8,
+M-014,Mirror,Reflect Dual-Sided Magnified Smart Arm Mirror,310,Glass & Chrome,Minimalist Modern,12.0,4.0,14.0,1.0,7,0.0,15,0,8,
+M-015,Mirror,Omni Horizon Panoramic Wide Mirror,1250,Glass & Smoked Oak Trim,Minimalist Modern,60.0,2.5,32.0,3.5,9,0.0,35,1,8,
+M-016,Mirror,Kallista Contemporary Precision Polish Mirror,980,Glass & Sterling Silver Leaf,Classic Luxury,30.0,2.0,40.0,2.0,9,0.0,0,0,7,
+X-002,Sensor,H2Wise Smart Whole-Home Shutoff Valve,850,Solid Brass & ABS,Minimalist Modern,8.0,5.0,6.0,1.0,8,0.0,15,1,10,
+X-003,Sensor,Aquifer Intelligent Water Purity Monitor,420,BPA-free Polymer & Steel,Minimalist Modern,5.0,3.5,7.0,0.5,7,0.0,8,1,9,
+X-004,Sensor,VapourSense Humidity & Ventilation Trigger,210,Matte Polycarbonate,Minimalist Modern,4.0,1.5,4.0,0.2,7,0.0,5,1,10,
+X-005,Sensor,FlowGuard Ultrasonic Pipe Flow Meter,580,Brass & Composite,Industrial Chic,7.0,4.0,5.0,0.8,8,0.0,12,1,10,
+X-006,Sensor,AuraScan Touchless Occupancy & Light Sensor,180,Matte White Acrylic,Japanese Zen,3.5,1.0,3.5,0.2,8,0.0,3,1,10,
+X-007,Sensor,FreezeSafe Remote Freeze & Temp Detector,140,ABS Plastic,Minimalist Modern,3.0,1.2,3.0,0.2,6,0.0,2,1,9,
+X-008,Sensor,PureAir VOC & Steam Bathroom Analyzer,320,Anodized Aluminum & Mesh,Minimalist Modern,5.0,2.0,5.0,0.3,8,0.0,6,1,9,
+X-009,Sensor,HydroCheck Multi-Zone Flood Puck (3-Pack),290,Silicone & Polycarbonate,Transitional,3.0,3.0,1.0,0.5,7,0.0,4,1,10,
+X-010,Sensor,EcoDrain Greywater Thermal Energy Sensor,740,Stainless Steel 316,Industrial Chic,10.0,4.5,4.5,1.2,8,0.0,10,1,10,
+X-011,Sensor,SmartScent Micro-Aerosol Fragrance Dispenser,260,Frosted Glass & Aluminum,Japanese Zen,4.5,4.5,8.0,0.5,9,0.0,8,1,8,
+X-012,Sensor,RadiantWarm Underfloor Temperature Probe,190,Copper & Thermoplastic,Minimalist Modern,2.0,2.0,1.0,0.1,7,0.0,2,1,9,
+X-013,Sensor,AquaTrack Pressure Surge Dampening Sensor,490,Forged Brass,Classic Luxury,6.5,4.0,4.0,0.6,8,0.0,7,1,9,
