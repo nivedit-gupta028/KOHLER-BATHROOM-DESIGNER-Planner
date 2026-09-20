@@ -6,7 +6,25 @@ A FastAPI and Three.js bathroom planning application. The backend selects a coor
 
 [Watch the project demonstration video](demonstration.mp4)
 
-The video is stored with Git LFS because it exceeds GitHub's standard file-size limit. Install Git LFS and run `git lfs pull` after cloning to download the full video.
+The video is stored with Git LFS because it exceeds GitHub's standard file-size limit.
+
+### Browser access
+
+1. Open the [KOHLER Bathroom Designer repository](https://github.com/nivedit-gupta028/KOHLER-BATHROOM-DESIGNER-Planner).
+2. Select `demonstration.mp4`.
+3. Choose **Download** or **View raw**.
+
+### Download with Command Prompt
+
+Install [Git LFS](https://git-lfs.com/) first, then run:
+
+```cmd
+git clone https://github.com/nivedit-gupta028/KOHLER-BATHROOM-DESIGNER-Planner.git
+cd KOHLER-BATHROOM-DESIGNER-Planner
+git lfs install
+git lfs pull
+start demonstration.mp4
+```
 
 ## Features
 
