@@ -28,6 +28,10 @@ start demo2.mp4
 
 The original recording is also available as [`demonstration.mp4`](demonstration.mp4).
 
+### Google Drive playback
+
+If GitHub video playback is unavailable, [open the demonstration video folder on Google Drive](https://drive.google.com/drive/folders/1ZkOdLjvHD3Avbprb70QO_RLHNErxGVWD?usp=sharing), select the video file, and press **Play** in Google Drive's preview. The Drive folder must remain shared with viewers as **Anyone with the link**.
+
 ## Features
 
 - Room planning inputs for length, width, and budget.
