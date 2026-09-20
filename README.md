@@ -2,6 +2,12 @@
 
 A FastAPI and Three.js bathroom planning application. The backend selects a coordinated fixture collection from the 100-item catalog, checks budget and floor-space constraints, and calculates non-overlapping placements. The frontend presents the result as an interactive 3D room with fixture inspection, finish controls, live water simulation, room metrics, and a bill of materials.
 
+## Demonstration Video
+
+[Watch the project demonstration video](demonstration.mp4)
+
+The video is stored with Git LFS because it exceeds GitHub's standard file-size limit. Install Git LFS and run `git lfs pull` after cloning to download the full video.
+
 ## Features
 
 - Room planning inputs for length, width, and budget.
